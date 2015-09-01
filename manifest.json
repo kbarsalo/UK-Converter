@@ -1,0 +1,24 @@
+/** 
+The basic Google extension code.
+Currently does nothing, but I'm a fan of placeholders. 
+Author: Katherine Barsaloux
+Date: 9/1/2015 
+Version: 0.1
+**/
+
+{
+  "manifest_version": 2,
+
+  "name": "UKConverter",
+  "description": "This extension replaces pounds(€) or Euros(£) to the correct US dollar amount. ",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
