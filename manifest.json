@@ -1,9 +1,9 @@
 /** 
 The basic Google extension code.
-Currently does nothing, but I'm a fan of placeholders. 
+Currently looks usable, but is not. 
 Author: Katherine Barsaloux
 Date: 9/1/2015 
-Version: 0.1
+Version: 0.2
 **/
 
 {
@@ -11,7 +11,7 @@ Version: 0.1
 
   "name": "UKConverter",
   "description": "This extension replaces pounds(€) or Euros(£) to the correct US dollar amount. ",
-  "version": "0.1",
+  "version": "0.2",
 
   "browser_action": {
     "default_icon": "icon.png",

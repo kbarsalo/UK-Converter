@@ -2,31 +2,36 @@
 <html>
   <head>
     <title>UKConverter's Popup</title>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <style>
       body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
+        background-color: white;
+        width: 250px;
+        padding:10px;
+        font-family: 'Lora', sans-serif;
       }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
+      h1 {
+        font-size: 16px;
+      }
+      p {
+         font-size: 13px;
       }
     </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
     <script src="popup.js"></script>
   </head>
   <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
+    <h1>Check the currency you wish to convert to US dollars. </h1>
+    <form>
+    <p><input type="radio" id="c1" name="currency" value="GBP" checked>(&pound;) - British Pound(s) </p>
+    <p><input type="radio" id="c2"  name="currency" value="EUR">(&#8364;) - Euro(s)</p>
+    <p><center><input type="submit" id="process" value="Enter"></p></center>
+    </form>
+    
+
+    <span id="result"></span>
+
+    
+
   </body>
 </html>
 
